@@ -71,7 +71,6 @@ mini-ecommerce/
 │   ├── src/
 │   │   ├── components/       - React components
 │   │   ├── pages/            - Pages or views
-│   │   ├── state/            - State management (Redux/Context)
 │   │   ├── tests/            - Frontend tests
 │   │   ├── App.js            - Main App component
 │   │   └── index.js          - Entry point
