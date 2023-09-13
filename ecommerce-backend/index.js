@@ -7,10 +7,17 @@ const app = express();
 app.use(express.json());
 
 // Database connection
-mongoose.connect("MONGODB_URL", { 
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
+mongoose.connect("mongodb+srv://test:test123@cluster0.bxj3hmx.mongodb.net/data?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
+.then(() => {
+    console.log('Connected to MongoDB');
+})
+.catch((error) => {
+    console.error('Error connecting to MongoDB', error);
 });
+
 
 // TODO: Add routes
 // TODO: Add middleware for authentication and validation
